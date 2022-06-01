@@ -80,7 +80,7 @@ if (useRaspivid) {
     this.tcpServer.listen(5000, '0.0.0.0')
 }
 
-server.listen(8081)
+server.listen(3000)
 
 // if not using raspivid option than use one of this to stream
 // ffmpeg OSX

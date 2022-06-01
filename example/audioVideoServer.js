@@ -194,13 +194,13 @@ if (rasp) {
         socket.on('error', e => {
             console.log('video downstream error:', e)
         })
-        audioServer.setVideoStream(socket)
+        audioServer.setAudioStream(socket)
 
     })
     this.tcpServer.listen(5001, '0.0.0.0')
 }
 
-server.listen({ port: 8081, host: '0.0.0.0' }, e => console.log(server.address()))
+server.listen({ port: 3000, host: '0.0.0.0' }, e => console.log(server.address()))
 
 // if not using raspivid option than use one of this to stream
 // ffmpeg OSX

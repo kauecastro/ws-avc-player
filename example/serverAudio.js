@@ -77,6 +77,6 @@ if (useSox) {
     this.tcpServer.listen(5001, '0.0.0.0')
 }
 
-server.listen(8082, () => {
+server.listen(3001, () => {
     console.log('listening!')
 })
